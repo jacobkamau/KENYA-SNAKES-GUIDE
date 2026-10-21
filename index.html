@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="An educational gallery about snakes recorded in Kenya.">
+<title>Kenya Snake Guide</title><link rel="stylesheet" href="style.css">
+<script src="snakes.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span>🐍</span><div><b>Kenya Snake Guide</b><small>Learn · Identify · Protect</small></div></a>
+<nav><a href="#gallery">Gallery</a><a href="#safety">Safety</a><a href="#about">About</a></nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow">KENYA · BIODIVERSITY · EDUCATION</p><h1>Get to know the snakes of Kenya.</h1><p>Explore snake profiles, identification notes, habitats, diets, and practical safety advice.</p><a class="cta" href="#gallery">Explore the gallery ↘</a><small class="warning">For learning only. Never handle a snake to identify it.</small></div><div class="hero-art" aria-hidden="true"><div class="leaf l1"></div><div class="leaf l2"></div><div class="leaf l3"></div><span>Explore Kenya's wildlife</span></div></section>
+<section class="stats"><div><b id="count">30</b><span>starter profiles</span></div><div><b>3</b><span>quick filters</span></div><div><b>Free</b><span>to publish</span></div></section>
+<section id="gallery" class="section"><p class="eyebrow">FIELD GUIDE</p><h2>Snake gallery</h2><p class="muted">Search by common or scientific name, then choose a filter. Select a card for more information.</p>
+<label class="search">⌕ <input id="search" type="search" placeholder="Search snake names, habitat, or diet…"></label>
+<div class="filters"><button class="active" data-filter="all">All snakes</button><button data-filter="venomous">Medically significant venom</button><button data-filter="non-venomous">Non-venomous</button><button data-filter="check">Needs verification</button></div>
+<p id="summary" class="muted" aria-live="polite"></p><div id="grid" class="grid"></div><p class="footnote">Image lookups use Wikimedia Commons. Check each actual image, source, and licence before academic reuse. An image may fail to load or show a mismatched result.</p></section>
+<section id="safety" class="safety"><div><p class="eyebrow">STAY SAFE</p><h2>If you encounter a snake</h2><p>Snakes are important to ecosystems. Give them space and let trained responders handle identification or relocation.</p></div><div class="safety-items"><article><b>01</b><div><h3>Keep your distance</h3><p>Do not touch, corner, tease, or try to kill it.</p></div></article><article><b>02</b><div><h3>Move away calmly</h3><p>Warn others nearby and give the snake an escape route.</p></div></article><article><b>03</b><div><h3>After a bite, get urgent medical help</h3><p>Keep the person still and seek emergency care immediately. Do not cut, suck, ice, or apply a tight tourniquet.</p></div></article></div></section>
+<section id="about" class="section about"><div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>Curiosity with care.</h2></div><div><p>This beginner-friendly project introduces snake diversity in Kenya. Scientific names and ranges change as research improves. Verify every species against a current, reputable Kenyan checklist before submitting formal research.</p><p class="footnote">Suggested references: National Museums of Kenya, Kenya Wildlife Service, IUCN Red List, and regional herpetology field guides.</p></div></section>
+</main><footer>© <span id="year"></span> Kenya Snake Guide · Built for education and wildlife awareness.</footer>
+<dialog id="profile"><button id="close" class="close" aria-label="Close">×</button><div id="profile-content"></div></dialog>
+</body></html>
